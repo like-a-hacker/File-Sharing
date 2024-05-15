@@ -1,35 +1,48 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            GEE'S Share
-        </title>
-        <link rel="icon" type="image/x-icon" href="GEES.png">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        
-    </head>
-    <body>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gee's Share</title>
+    <link rel="icon" type="image/x-icon" href="GEES.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="sheader">
         <div class="header">
-            <img class=im src="GEES.png" alt="GEES" >
+            <a href="index.html"><img class=im src="GEES.png" alt="GEES" ></a>
             <div class="right">
                 <a href="index.html">Home</a>
-                <a href="index.html">Send</a>
+                <a href="sender.html">Send</a>
                 <a href="receiver.html">Receive</a>
-                <a href="">How to</a>
-                <a href="">Contact</a>
+                <a href="about.html">About</a>
             </div>
         </div>
-        <div class="bod">
-            
-            <div class="down">
-                <span id="Receive">Receive</span><br>
-                <input id="inr" type="number" maxlength="2" ><br>
-                <button type="submit" value="Submit">Submit</button>
-            </div>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
-        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
+    </header>
+	<div class="app">
+		<div class="screen join-screen active">
+			<div class="form">
+				<h2>Share your files securely</h2>
+				<div class="form-input">
+					<label>Join ID</label>
+					<input type="text" id="join-id">
+				</div>
+				<div class="form-input">
+					<button id="receiver-start-con-btn">Connect</button>
+				</div>
+			</div>
+		</div>
+		<div class="screen fs-screen">
+			<div class="files-list">
+				<div class="title">Shared files</div>
+			</div>	
+		</div>
+        <footer class="sfooter">
+            <p align="center">@Created By Gowtham Ramesh</p>
+        </footer>
+	</div>
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
+	<script type="text/javascript" src="receiver.js"></script>
+</body>
 </html>

@@ -1,45 +1,34 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            GEE'S Share
-        </title>
-        <link rel="icon" type="image/x-icon" href="GEES.png">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        
-    </head>
-    <body>
-        <div class="header">
-            <img class=im src="GEES.png" alt="GEES" >
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gee's Share</title>
+    <link rel="icon" type="image/x-icon" href="GEES.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+    <header class="sheader">
+        <div class="header" class="sheader">
+            <a href="index.html"><img class=im src="GEES.png" alt="GEES" ></a>
             <div class="right">
                 <a href="index.html">Home</a>
-                <a href="index.html">Send</a>
+                <a href="sender.html">Send</a>
                 <a href="receiver.html">Receive</a>
-                <a href="">How to</a>
-                <a href="">Contact</a>
+                <a href="about.html">About</a>
             </div>
         </div>
-        <div class="bod">
-            <div class="screen room active">
-                <div class="form">
-                    <h2>Share your files</h2>
-                    <div class="form-input">
-                        <button id="sender-start-con-btn">Create room</button>
-                    </div>
-                    <div class="form-input" id="join-id">
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="screen up">
-                <span id="Send">Send</span><br>
-                <input id="in" type="file" />
-                <div class="form-input" id="join-id">
-                </div>
-            </div>
+    </header>
+	<div class="app" style="background-image: url('back.png'); background-repeat:no-repeat;">
+        
+        <div class="button">
+            <a href="sender.html">Send</a>&nbsp;&nbsp;&nbsp;
+            <a href="receiver.html">Receive</a>
         </div>
-        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
+        <footer class="sfooter">
+            <p align="center">@Created By Gowtham Ramesh</p>
+        </footer>
+	</div>
+    
+</body>
 </html>
