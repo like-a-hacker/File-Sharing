@@ -18,7 +18,7 @@ body {
 }
 .app {
 	position:absolute;
-	top: 80px;
+	top: 0px;
 	left: 50%;
     overflow: auto;
 	transform: translateX(-50%);
@@ -27,7 +27,7 @@ body {
 	height: 100%;
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
-	background: #ff0084;
+	background: #FF4191;
 }
 
 .join-screen .form {
@@ -136,38 +136,50 @@ body {
     padding: 10px 10px;
     overflow: hidden;
 	position: sticky;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .im {
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
+	color: #FFF078;
 }
 .right{
     float: right;
-    margin-top: 18px;
+	display: flex;
+	align-items: center;
 }
 .right a {
     padding: 10px;
     text-decoration: none;
     line-height: 25px;
-    color: black;
+    color: white;
 }
-.button a {
-    text-decoration: none;
-    padding: 15px;
-    font-size:xx-large;
-    background-color: cyan;
-    border-radius: 6px;
-    color: black;
-    gap: 100px;
+.button > div > a {
+	text-decoration: none;
+	color: black;
+	width: fit-content;
+	border: 1px solid white;
+	font-weight: bolder;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: white;
+}
+.button > div > a:hover {
+	background-color: #FFF078;
+	border: 1px solid #FFF078;
 }
 .button {
-    margin-top: 350px;
-    margin-left: 350px;
+	height: 70%;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	
 }
 .right a:hover {
-    background-color: cyan;
+    background-color: #FFF078;
+	color: black;
     border-radius: 5px;
 }
 .about {
@@ -187,9 +199,27 @@ body {
     
 }
 .sfooter p {
+	padding-top: 5px;
     color: antiquewhite;
 }
 .sheader {
     position: sticky;
-    background-color: rgb(235, 227, 227);
+    background-color: rgb(0, 0, 0);
+}
+.sfooter > div {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding-bottom: 10px;
+}
+.sfooter > div > a {
+	color: white;
+}
+.np {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
 }
