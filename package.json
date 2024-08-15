@@ -2,7 +2,7 @@
   "name": "sample",
   "version": "1.0.0",
   "description": "",
-  "main": "serverjs",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
